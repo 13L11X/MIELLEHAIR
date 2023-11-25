@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIELLEHAIR | Product </title>
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+  <style>
+
+
+    /* Style for the button */
+
+
+    /* Style for the modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: black;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      border-radius: 6px;
+      max-width: 400px;
+      width: 100%;
+      opacity: 0;
+      animation: fadeIn 0.3s ease-in-out forwards;
+    }
+
+    /* Animation for fading in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 2;
+      }
+    }
+
+    /* Style for the form inputs */
+    .modal input,
+    .modal textarea {
+      width: calc(100% - 20px);
+      height: 40px;
+      margin-bottom: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Style for the submit button */
+    .modal button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: var(--sea-green);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+
+    /* Style for the close button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      color: #555;
+    }
+
+    /* Media queries for responsive design */
+    @media screen and (max-width: 600px) {
+      .modal {
+        max-width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .modal {
+        max-width: 80%;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .modal {
+        max-width: 70%;
+      }
+    }
+
+    @media screen and (max-width: 300px) {
+      .modal {
+        max-width: 60%;
+      }
+    }
+
+    @media screen and (max-width: 200px) {
+      .modal {
+        max-width: 50%;
+      }
+    }
+  </style>
+
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+    <div class="container">
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="77" height="20" alt="MIELLEHAIR">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Collection</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="navbar-link">Reviews</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-action">
+
+              <a href="https://www.instagram.com/mielleorganic" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+
+
+
+      </div>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product" aria-label="product">
+        <div class="container">
+
+          <div class="product-slides">
+
+            <div class="slider-banner" data-slider>
+              <figure class="product-banner">
+                <img src="./assets/images/product-3.0.png" width="600" height="600" loading="lazy" alt="Nike Sneaker"
+                  class="img-cover">
+              </figure>
+              
+	      <figure class="product-banner">
+                <img src="./assets/images/product-3.1.png" width="600" height="600" loading="lazy" alt="Nike Sneaker"
+                  class="img-cover">
+              </figure>
+
+              <figure class="product-banner">
+                <img src="./assets/images/product-3.2.png" width="600" height="600" loading="lazy" alt="Nike Sneaker"
+                  class="img-cover">
+              </figure>
+
+              <figure class="product-banner">
+                <img src="./assets/images/product-3.3.png" width="600" height="600" loading="lazy" alt="Nike Sneaker"
+                  class="img-cover">
+              </figure>
+
+
+            </div>
+
+            <button class="slide-btn prev" aria-label="Previous image" data-prev>
+              <ion-icon name="chevron-back" aria-hidden="true"></ion-icon>
+            </button>
+
+            <button class="slide-btn next" aria-label="Next image" data-next>
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="product-content">
+
+            <p class="product-subtitle">MIELLEHAIR</p>
+
+            <h1 class="h1 product-title">ماسك الروزماري والنعناع لتقوية الشعر</h1>
+
+            <p class="product-text">
+                هل يستحق شعرك القليل من الحب الإضافي؟ أضف قناع تقوية الشعر بالروزماري والنعناع من ميلي إلى روتينك! هذه التركيبة الغنية بالمغذيات مصنوعة لتوفر رطوبة عميقة وقوة صحية. مع المكونات الطبيعية والعضوية مثل إكليل الجبل وزيت بذور السمسم والعسل وزيت جوز الهند، يوفر قناع الشعر هذا الترطيب والتغذية التي يحتاجها شعرك. قم بتدليك شعرك بعد استخدام شامبو تقوية الشعر بالروزماري والنعناع، واتركه لمدة 15 إلى 20 دقيقة، ثم اشطفه.
+<br>
+
+            </p>
+
+            <div class="wrapper">
+
+              <span class="price" data-total-price>310 DH</span>
+
+              <span class="badge">50%</span>
+
+              <del class="del">600 DH</del>
+
+            </div>
+
+
+
+              <button onclick="openModal()" class="cart-btn">
+                <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">اشتري الان</span>
+              </button>
+
+
+<!-- The Modal -->
+<div id="contactModal" class="modal">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+<form action="https://formsubmit.co/llox816@gmail.com" method="POST">
+
+    <input type="hidden" name="product_name" value="value_hnaya" />
+
+    <label style="font-size: 20px; color: white;" for="name">Full name:</label>
+    <input type="text" id="name" name="name" placeholder="Jhon doe" required>
+
+    <label style="font-size: 20px; color: white;"  for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+    <label style="font-size: 20px; color: white;"  for="subject">Adresse:</label>
+    <input type="text" id="subject" name="adresse" placeholder="Your adresse" required>
+
+    <label style="font-size: 20px; color: white;" for="message">City:</label>
+    <textarea id="message" name="city" placeholder="Your city" required></textarea>
+
+
+    <label style=" color: white;" for="message">ZIP Code</label>
+    <textarea id="message" name="zip" rows="4" placeholder="ZIP Code" required></textarea>
+
+    <button type="submit">Ordre now</button>
+  </form>
+</div>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+<script>
+  // Functions to open and close the modal
+  function openModal() {
+    const modal = document.getElementById('contactModal');
+    modal.style.display = 'block';
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('contactModal');
+    modal.style.animation = 'fadeOut 0.3s ease-in-out forwards';
+    setTimeout(() => {
+      modal.style.display = 'none';
+      modal.style.animation = '';
+    }, 300);
+  }
+</script>
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIELLEHAIR | Home</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">FREE SHIPPING ON MOROCCO TODAY ONLY</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="./" class="logo">
+          <img src="./assets/images/logo.png" width="100" height="26" alt="mielle">
+        </a>
+
+        <div class="header-actions">
+
+
+
+
+              <a href="https://www.instagram.com/mielleorganic" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+
+
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="navbar-link has-after">Collection</a>
+            </li>
+
+            <li>
+              <a href="#reviews" class="navbar-link has-after">Reviews</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="./" class="logo">
+          <img src="./assets/images/logo.png" width="100" height="26" alt="mielle">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Collection</a>
+        </li>
+
+
+
+
+
+        <li>
+          <a href="#reviews" class="navbar-link" data-nav-link>Reviews</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="hero-card banner-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    MIELLEHAIR
+                  </h1>
+
+                  <p style="color: rgb(0, 0, 0); background-color: white; opacity: 0.7;" class="hero-text">
+
+                  زيت طبيعي غني عن التعريف أصلي والنتيجة مضمونة
+
+                  </p>
+
+                  <p class="price">ابتداءا من 340 درهم</p>
+
+                  <a href="#collection" class="btn btn-primary">Shop Now</a>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <ul class="collection-list">
+
+            <li>
+
+              <div class="collection-card has-before hover:shine">
+
+                <h2 style="background-color: white; opacity: 0.8;" class="h2 card-title">زيت إكليل الجبل الأصلية لتقوية وتطويل الشعر🌱</h2>
+
+                <p style="background-color: white; opacity: 0.8;" class="card-text">340 DH</p>
+
+                <a style="color: white;"  href="./products/product-1.html" class="btn-link btn btn-primary">
+                  <span class="span">Shop Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/product-1.png')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 style="background-color: white; opacity: 0.8;" class="h2 card-title">شامبو البايوتين وإكليل الجبل لتغذية وتطويل الشعر</h2>
+
+                <p style="background-color: white; opacity: 0.8;" class="card-text">295 DH</p>
+
+                <a style="color: white;"  href="./products/product-2.html" class="btn-link btn btn-primary">
+                  <span class="span">Shop Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/product-2.png')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 style="background-color: white; opacity: 0.8;" class="h2 card-title">ديرمارولر لتحفيز فعالية زيت مييل ونمو الشعر</h2>
+
+                <p style="background-color: white; opacity: 0.8;" class="card-text">340 DH</p>
+
+                <a style="color: white;"  href="./products/product-3.html" class="btn-link btn btn-primary">
+                  <span class="span">Shop Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/product-3.png')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">لماذا نحن ؟</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">نقي مضمون</h3>
+
+                <p class="card-text">
+                  تلتزم جميع التركيبات بمعايير النقاء الصارمة ولن تحتوي أبدًا على مكونات قاسية أو سامة
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
+                  alt="Completely Cruelty-Free" class="card-icon">
+
+                <h3 class="h3 card-title">خالية تمامًا من القسوة</h3>
+
+                <p class="card-text">
+                  تلتزم جميع التركيبات بمعايير النقاء الصارمة ولن تحتوي أبدًا على مكونات قاسية أو سامة
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
+                  alt="Ingredient Sourcing" class="card-icon">
+
+                <h3 class="h3 card-title">مصادر المكونات</h3>
+
+                <p class="card-text">
+                  تلتزم جميع التركيبات بمعايير النقاء الصارمة ولن تحتوي أبدًا على مكونات قاسية أو سامة
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="reviews" aria-label="Reviews" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">التعليقات</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <video controls src="./assets/images/review-1.mp4" width="700" height="450" loading="lazy" alt="Find a Store"
+                  class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Rosemary Mint Scalp 
+                  </a>
+                </h3>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Hair Strengthening Oil</span>
+
+                </a>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <video controls src="./assets/images/review-2.mp4" width="700" height="450" loading="lazy" alt="Find a Store"
+                  class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Rosemary Mint Scalp 
+                  </a>
+                </h3>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Hair Strengthening Oil</span>
+
+                </a>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <video controls src="./assets/images/review-3.mp4" width="700" height="450" loading="lazy" alt="Find a Store"
+                  class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Rosemary Mint Scalp 
+                  </a>
+                </h3>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Hair Strengthening Oil</span>
+
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              MOROCCO
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">0034600162832</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">appystoreappystore@gmail.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful links</p>
+          </li>
+
+          <li>
+            <a href="#home" class="navbar-link has-after">Home</a>
+          </li>
+
+          <li>
+            <a href="#collection" class="navbar-link has-after">Collection</a>
+          </li>
+
+          <li>
+            <a href="#reviews" class="navbar-link has-after">Reviews</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Infomation</p>
+          </li>
+
+          <li>
+            <a href="#home" class="navbar-link has-after">Home</a>
+          </li>
+
+          <li>
+            <a href="#collection" class="navbar-link has-after">Collection</a>
+          </li>
+
+          <li>
+            <a href="#reviews" class="navbar-link has-after">Reviews</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Good emails.</p>
+
+          <p class="newsletter-text">
+            Enter your email below to be the first to know about new collections and product launches.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2023 RCHAMEXE
+          </p>
+
+          <ul class="social-list">
+
+
+            <li>
+              <a href="https://www.instagram.com/mielleorganic/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="100" height="26" loading="lazy" alt="mielle">
+        </a>
+
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
