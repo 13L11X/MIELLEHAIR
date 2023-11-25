@@ -259,7 +259,7 @@
               </button>
 
               <!-- Overlay -->
-<div class="overlay" id="overlay"></div>
+<div class="overlay" id="modalOverlay"></div>
 
 
 <!-- The Modal -->
@@ -301,19 +301,19 @@
   // Functions to open and close the modal
   function openModal() {
     const modal = document.getElementById('contactModal');
-    const overlay = document.getElementById('overlay');
+    const modalOverlay = document.getElementById('modalOverlay');
     modal.style.display = 'block';
-    overlay.style.display = 'block';
+    modalOverlay.style.display = 'block';
   }
 
   function closeModal() {
     const modal = document.getElementById('contactModal');
-    const overlay = document.getElementById('overlay');
+    const overlay = document.getElementById('modalOverlay');
     modal.style.animation = 'fadeOut 0.3s ease-in-out forwards';
     setTimeout(() => {
       modal.style.display = 'none';
       modal.style.animation = '';
-      overlay.style.display = 'none';
+      modalOverlay.style.display = 'none';
     }, 300);
   }
 </script>
