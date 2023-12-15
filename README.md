@@ -1,8 +1,8 @@
 # MIELLEHAIR
 <div align="center">
 
-E-commerce static website for a client from nsayblik.com
-For demo : https://miellehair.vercel.app
+# E-commerce static website for a client from nsayblik.com
+# For demo : https://miellehair.vercel.app
   
        #For desktop
   <img src="assets/images/Screenshot_1.png">
